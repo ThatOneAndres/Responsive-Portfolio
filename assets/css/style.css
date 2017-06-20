@@ -1,0 +1,196 @@
+html{
+	position:relative;
+	min-height: 100%;
+}
+body{
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Nueu', Helvetica, sans-serif;
+	background-image: url("../images/concrete-texture.png");
+	background-repeat: repeat;
+	margin: 0;
+}
+h1{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+a{
+	text-decoration: none;
+	color: #777777;
+}
+#background {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+}
+.strecth{
+	width: 100%;
+	height: 100%;
+}
+.active{
+	text-decoration: underline;
+}
+.container{
+}
+.header{
+	background-color: #ffffff;
+	border-bottom: solid;
+	border-bottom-color: #cccccc;
+	overflow: auto;
+
+}
+#name{
+	background-color: #4aaaa5;
+	color: white;
+	float: left;
+	width: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 10px;
+}
+.mid-section-title{
+	color: #4aaaa5;
+	border-bottom: solid #777777;
+	padding-bottom: 15px;
+}
+.links{
+	float:right;
+	padding: 0 10px 0 10px;
+	margin-top: 1.5%;
+}
+#about{
+	border-right: solid 1px;
+	border-right-color: #e0ebeb;
+}
+#portfolio{
+	border-right: solid 1px;
+	border-right-color: #e0ebeb; 
+}
+.mid-section{
+	overflow: auto;
+	margin-bottom: 100px;
+}
+.margin{
+	margin-left: 7%;
+	margin-right: 7%;
+}
+.main_content{
+	display: block;
+	clear: both;
+	background-color: #ffffff;
+	border-color:#dddddd;
+	float: left;
+	width: 650px;
+	padding: 20px;
+	margin-top:20px;
+}
+#profile_pic{
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+.social_links{
+	float: right;
+	background-color: #ffffff;
+	width: 270px;
+	padding: 20px 10px 30px 10px;
+	margin-top: 20px;
+}
+.icons
+{
+	margin-left: 10%;
+}
+#connect{
+	text-align: center;
+}
+button[type=button] {
+	margin-top: 10px;
+	background: #4aaaa5;
+	color: #fff;
+	width: 16%;
+	height: 42px;
+	border: none;
+	font-size: 1em;	 
+}
+.left{
+	width: 250px;
+	height: 200px;
+	display: inline-block;
+	margin: 20px 0px 20px 30px;
+	position: relative;
+}
+.right{
+	width: 250px;
+	height: 200px;
+	display: inline-block;
+	margin: 10px 0 20px 90px;
+	position: relative;
+}
+
+.overlay{
+	height: 25px;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	background-color:#4aaaa5; 
+	bottom: 20px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px 0 10px 0;
+	
+}
+
+.footer_note{
+	background-color: #666666;
+	border-top: solid 5px #4aaaa5;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: absolute;
+    left: 0;
+    bottom: 0;
+	color:#fff;
+	width: 100%;
+	z-index: 2;
+}
+@media screen and (max-width: 980px) {
+	.main_content{
+		width: 300px;
+	}
+	.left{
+		margin: 0;
+	}
+	.right{
+		margin: 0;
+	}
+	#profile_pic{
+		float: none;
+	}
+	button[type=button]{
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main_content{
+		width: 100%;
+	}
+	.social_links{
+		width: 100%;
+		padding: 20px;
+		margin-right: -7%;
+	}
+	#connect{
+		text-align: left;
+	}
+	.icons{
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	
+}
