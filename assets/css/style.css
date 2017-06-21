@@ -131,14 +131,14 @@ button[type=button] {
 	width: 250px;
 	height: 200px;
 	display: inline-block;
-	margin: 20px 0px 20px 30px;
+	margin: 20px 0px 20px 15px;
 	position: relative;
 }
 .right{
 	width: 250px;
 	height: 200px;
 	display: inline-block;
-	margin: 10px 0 20px 90px;
+	margin: 10px 0 20px 70px;
 	position: relative;
 }
 
@@ -214,5 +214,8 @@ button[type=button] {
 }
 
 @media screen and (max-width: 640px) {
+	.right{
+		display: block;
+	}
 	
 }
