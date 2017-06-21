@@ -32,6 +32,12 @@ a{
 	text-decoration: underline;
 }
 .container{
+	width: 960px;
+	margin: 20px auto;
+}
+.nav-container{
+	width: 960px;
+	margin: auto;
 }
 .header{
 	background-color: #ffffff;
@@ -54,6 +60,7 @@ a{
 	border-bottom: solid #777777;
 	padding-bottom: 15px;
 }
+
 .links{
 	float:right;
 	padding: 0 10px 0 10px;
@@ -75,28 +82,35 @@ a{
 	margin-left: 7%;
 	margin-right: 7%;
 }
-.main_content{
+.main-container{
+	width: 650px;
 	display: block;
 	clear: both;
+	overflow: auto;
+	float: left;
+}
+.main_content{
 	background-color: #ffffff;
 	border-color:#dddddd;
-	float: left;
-	width: 650px;
 	padding: 20px;
 	margin-top:20px;
 }
-#profile_pic{
+
+.profile_pic{
 	position: relative;
 	display: inline-block;
 	float: left;
 }
-.social_links{
-	float: right;
-	background-color: #ffffff;
+.sidebar-container{
 	width: 270px;
+	float: right;
+}
+.social_links{
+	background-color: #ffffff;
 	padding: 20px 10px 30px 10px;
 	margin-top: 20px;
 }
+
 .icons
 {
 	margin-left: 10%;
@@ -150,15 +164,18 @@ button[type=button] {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	position: absolute;
-    left: 0;
-    bottom: 0;
+	left: 0;
+	bottom: 0;
 	color:#fff;
 	width: 100%;
 	z-index: 2;
 }
 @media screen and (max-width: 980px) {
-	.main_content{
-		width: 300px;
+	.container,.nav-container{
+		width: 690px;
+	}
+	.main-container{
+		width: 400px;
 	}
 	.left{
 		margin: 0;
@@ -166,7 +183,7 @@ button[type=button] {
 	.right{
 		margin: 0;
 	}
-	#profile_pic{
+	.profile_pic{
 		float: none;
 	}
 	button[type=button]{
@@ -175,13 +192,18 @@ button[type=button] {
 }
 
 @media screen and (max-width: 768px) {
-	.main_content{
+	.main-container,.nav-container{
 		width: 100%;
 	}
-	.social_links{
+	.sidebar-container{
 		width: 100%;
 		padding: 20px;
 		margin-right: -7%;
+	}
+	.profile_pic{
+		float:left;
+		display: inline-block;
+		float: left;
 	}
 	#connect{
 		text-align: left;
