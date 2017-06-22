@@ -42,7 +42,7 @@ a{
 }
 .header{
 	background-color: #ffffff;
-	border-bottom: solid;
+	border-bottom: solid 1px;
 	border-bottom-color: #cccccc;
 	overflow: auto;
 
