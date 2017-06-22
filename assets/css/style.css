@@ -38,6 +38,7 @@ a{
 .nav-container{
 	width: 960px;
 	margin: auto;
+	overflow: auto;
 }
 .header{
 	background-color: #ffffff;
@@ -100,6 +101,7 @@ a{
 	position: relative;
 	display: inline-block;
 	float: left;
+	margin-right: 10px;
 }
 .sidebar-container{
 	width: 270px;
@@ -179,9 +181,14 @@ button[type=button] {
 	}
 	.left{
 		margin: 0;
+		padding-bottom: 20px;
 	}
 	.right{
 		margin: 0;
+		padding-bottom: 20px;
+	}
+	.overlay{
+		bottom: 40px;
 	}
 	.profile_pic{
 		float: none;
@@ -189,21 +196,28 @@ button[type=button] {
 	button[type=button]{
 		width: 30%;
 	}
+	.all-port{
+		padding-left: 14%;
+		overflow: auto;
+		width: 90%;
+	}
 }
 
 @media screen and (max-width: 768px) {
 	.main-container,.nav-container{
 		width: 100%;
 	}
+	.all-port{
+		padding-left: 0;
+	}
 	.sidebar-container{
 		width: 100%;
-		padding: 20px;
 		margin-right: -7%;
+		float: left;
 	}
 	.profile_pic{
 		float:left;
 		display: inline-block;
-		float: left;
 	}
 	#connect{
 		text-align: left;
@@ -211,11 +225,50 @@ button[type=button] {
 	.icons{
 		margin-left: 0;
 	}
+	.right{
+		float: right;
+		margin-right: 20px;
+	}
+	.left{
+		float: left;
+		margin-left: 20px;
+	}
 }
 
 @media screen and (max-width: 640px) {
 	.right{
 		display: block;
 	}
+	.main-container{
+		width: 400px;
+		float: none;
+	}
+	.profile_pic{
+		float: none;
+	}
+	.container{
+		width: 410px;
+	}
+	#name{
+		float: none;
+		text-align: center;
+	}
+	.links{
+		width: 33%;
+    	text-align: center;
+    	padding: 0;
+	}
+	.all-port{
+		padding-left: 14%;
+	}
+	.left{
+		float: none;
+		margin: 0;
+	}
+	.right{
+		float: none;
+		margin: 0;
+	}
+
 	
 }
